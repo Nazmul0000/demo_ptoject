@@ -32,94 +32,140 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.teal,
+      backgroundColor: Colors.grey,
       body: Padding(
-        padding: const EdgeInsets.all(15.0),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            CircleAvatar(
-              radius: 25,
-              backgroundImage: AssetImage('images.jpg'),
-            ),
-            Text(
-              'Nazmul Hasan',
-              style: TextStyle(
-                  color: Colors.white.withOpacity(0.5),
-                  fontFamily: 'Roboto-Black'),
-            ),
-            SizedBox(
-              height: 5,
-            ),
-            Text(
-              'Flutter Developer',
-              style: TextStyle(
-                  color: Colors.white.withOpacity(0.5), fontFamily: 'Roboto'),
-            ),
-            Divider(
-              thickness: 0.8,
-              indent: 190,
-              endIndent: 190,
-              color: Colors.white.withOpacity(0.5),
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            Container(
-              padding: EdgeInsets.all(5),
-              height: 30,
-              decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(8),
-                  boxShadow: [
-                    BoxShadow(
-                        color: Colors.black, blurRadius: 5, spreadRadius: 2)
-                  ]),
-              child: Row(
-                children: [
-                  Icon(
-                    Icons.phone,
-                    color: Colors.blue,
-                  ),
-                  SizedBox(
-                    width: 5,
-                  ),
-                  Text('+8801305615251'),
-                ],
+          padding: const EdgeInsets.all(15.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              CircleAvatar(
+                radius: 25,
+                backgroundImage: AssetImage('images.jpg'),
               ),
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            Container(
-              padding: EdgeInsets.all(5),
-              height: 30,
-              decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(8),
-                  boxShadow: [
-                    BoxShadow(
-                        color: Colors.black, blurRadius: 5, spreadRadius: 2)
-                  ]),
-              child: Row(
-                children: [
-                  Icon(
-                    Icons.email,
-                    color: Colors.blue,
-                  ),
-                  SizedBox(
-                    width: 5,
-                  ),
-                  Text(
-                    'nazmulrana0@gmail.com',
-                    style: TextStyle(fontFamily: 'SourceSansPro-BlackItalic'),
-                  ),
-                ],
+              Text(
+                'Nazmul Hasan',
+                style: TextStyle(
+                    color: Colors.white.withOpacity(0.5),
+                    fontFamily: 'Roboto-Black'),
               ),
-            )
-          ],
-        ),
-      ),
+              SizedBox(
+                height: 5,
+              ),
+              Text(
+                'Flutter Developer',
+                style: TextStyle(
+                    color: Colors.white.withOpacity(0.5), fontFamily: 'Roboto'),
+              ),
+              Divider(
+                thickness: 0.8,
+                indent: 190,
+                endIndent: 190,
+                color: Colors.white.withOpacity(0.5),
+              ),
+              SizedBox(
+                height: 5,
+              ),
+              Container(
+                padding: EdgeInsets.all(5),
+                height: 30,
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(8),
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.black, blurRadius: 5, spreadRadius: 2)
+                    ]),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.phone,
+                      color: Colors.blue,
+                    ),
+                    SizedBox(
+                      width: 5,
+                    ),
+                    Text('+8801305615251'),
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 30,
+              ),
+              Container(
+                padding: EdgeInsets.all(5),
+                height: 30,
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(8),
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.black, blurRadius: 5, spreadRadius: 2)
+                    ]),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.email,
+                      color: Colors.blue,
+                    ),
+                    SizedBox(
+                      width: 5,
+                    ),
+                    Text(
+                      'nazmulrana0@gmail.com',
+                      style: TextStyle(fontFamily: 'SourceSansPro-BlackItalic'),
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 30,
+              ),
+              Container(
+                padding: EdgeInsets.only(
+                  left: 2,
+                ),
+                height: 30,
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(10),
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.black, blurRadius: 1, spreadRadius: 2)
+                    ]),
+                child: SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: [
+                      Icon(
+                        Icons.phone,
+                        color: Colors.teal,
+                      ),
+                      SizedBox(
+                        width: 188,
+                      ),
+                      Center(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [Text('nazmul')],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 188,
+                      ),
+                      Row(
+                        children: [
+                          Icon(
+                            Icons.exit_to_app,
+                            color: Colors.teal,
+                          )
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+              )
+            ],
+          )),
     );
   }
 }
