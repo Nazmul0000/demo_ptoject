@@ -1,3 +1,4 @@
+import 'package:demo_project/drawer.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -33,6 +34,10 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey,
+      appBar: AppBar(
+        title: Center(child: Text('First App')),
+      ),
+      drawer: custom_dwaer(),
       body: Padding(
           padding: const EdgeInsets.all(15.0),
           child: Column(
